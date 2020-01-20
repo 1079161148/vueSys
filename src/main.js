@@ -18,6 +18,9 @@ Vue.mixin(Mixin);
 
 Vue.use(ElementUI);
 
+import echarts from 'echarts' // 可视化图表插件
+Vue.prototype.$echarts = echarts
+
 Vue.prototype.$bus = new Vue();
 
 // 全局挂载不用每个组件 import 简单粗暴省去繁琐;
