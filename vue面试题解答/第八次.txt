@@ -1,0 +1,18 @@
+首先 MVC、MVP及MVVM都是一种架构模式，为了解决图形界面应用程序复杂性管理问题而产生的应用架构模式；
+Models: 数据层，负责数据的请求和存储以及处理
+
+View: 展示层，负责View和动画效果的展示，以及用户的交互
+
+Controller: 控制器层，负则连接View和Model，对view的交互事件有controller层处理传递给model，model处理再交互传递给Controller，Controller传递给view
+
+；
+
+MVC的通信都是单向的
+
+MVC中的View层和Model层是存在耦合的，但其实我们不提倡View层与Model层有直接的交互；MVP就是这样一种思想的体现，View层与Model的交互只能通过Presenter；
+
+MVP与MVC还有一点不同是，它的通信是双向的；
+
+MVVM是由MVP进化而来，MVVM模式基本上与MVP相同，只是把MVP中的P变成了VM，即ViewModel，
+
+MVVM中的数据可以实现双向绑定，即View层数据变化则ViewModel中的数据也随之变化，反之ViewModel中的数据变化，则View层数据也随之变化
